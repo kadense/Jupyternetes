@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Kadense.Models.Kubernetes" Version="0.1.*" />
+    <PackageReference Include="Kadense.Client.Kubernetes" Version="0.1.*" />
+    <PackageReference Include="Kadense.Logging" Version="0.1.*" />
+    <PackageReference Include="Kadense.Testing" Version="0.1.*" />
+    <ProjectReference Include="..\..\..\components\Models.Jupyternetes\src\Kadense.Models.Jupyternetes.csproj" />
+    <ProjectReference Include="..\..\..\components\Jupyternetes.Watchers\src\Kadense.Jupyternetes.Watchers.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Kadense.Jupyternetes.Pods.Operator</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>

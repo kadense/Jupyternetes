@@ -1,0 +1,19 @@
+hub:
+  image:
+    name: ghcr.io/kadense/kadense/jupyternetes-hub
+    tag: 0.1.134
+    pullPolicy: Always
+
+  config:
+    JupyterHub:
+      spawner_class: jupyternetes_spawner.JupyternetesSpawner
+
+      
+scheduling:
+  userScheduler:
+    enabled: false
+  userPlaceholder:
+    enabled: false
+
+debug:
+  enabled: true
