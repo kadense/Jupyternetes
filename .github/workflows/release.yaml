@@ -73,13 +73,13 @@ jobs:
     - setup
     - container-images
 
-  publish-ghp:
-    uses: kadense/kadense/.github/workflows/publish-ghp.yaml@main
-    secrets: inherit
-    needs: 
-    - get-version
-    - setup
-    - container-images
+  # publish-ghp:
+  #   uses: kadense/kadense/.github/workflows/publish-ghp.yaml@main
+  #   secrets: inherit
+  #   needs: 
+  #   - get-version
+  #   - setup
+  #   - container-images
         
   # publish-python-packages:
   #   uses: kadense/kadense/.github/workflows/python-modules.yaml@main
